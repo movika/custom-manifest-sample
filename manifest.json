@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "id": "manifest-uuid-1",
+    "version": "3.2",
+    "build": 0,
+    "created": "2021-05-13 10:39:20",
+    "updated": "2021-05-13 10:39:20",
+    "media": "media.json",
+    "initChapterId": "chapter-id-1"
+  },
+  "chapters": [
+    {
+      "id": "chapter-id-1",
+      "videoId": "video-id-1",
+      "containers": [
+        {
+          "id": "723e4567-e89b-12d3-a456-426614174000",
+          "startTime": 2400,
+          "fallbackStrategy": "await",
+          "type": "RandomPositionChoice",
+          "layout": {
+            "type": "relative"
+          },
+          "props": {
+            "xThreshold": 0.2,
+            "yThreshold": 0.2
+          },
+          "controls": [
+            {
+              "id": "control-id-1",
+              "type": "SimpleButton",
+              "layoutParams": {
+                "x": 0.25,
+                "y": 0.1,
+                "width": 0.3,
+                "height": 0.1
+              },
+              "props": {
+                "text": "Two"
+              },
+              "events": [
+                {
+                  "type": "onClick",
+                  "action": {
+                    "type": "setNextBranch",
+                    "args": {
+                      "branchId": "chapter-id-1-branch-1",
+                      "shouldOpenNow": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "control-id-2",
+              "type": "SimpleButton",
+              "layoutParams": {
+                "x": 0.3,
+                "y": 0.3,
+                "width": 0.3,
+                "height": 0.1
+              },
+              "props": {
+                "text": "Three"
+              },
+              "events": [
+                {
+                  "type": "onClick",
+                  "action": {
+                    "type": "setNextBranch",
+                    "args": {
+                      "branchId": "chapter-id-1-branch-2",
+                      "shouldOpenNow": true
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "id": "chapter-id-1-branch-1",
+          "chapterId": "chapter-id-2",
+          "weight": 1
+        },
+        {
+          "id": "chapter-id-1-branch-2",
+          "chapterId": "chapter-id-3",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "chapter-id-2",
+      "videoId": "video-id-2",
+      "branches": []
+    },
+    {
+      "id": "chapter-id-3",
+      "videoId": "video-id-3",
+      "branches": []
+    }
+  ]
+}

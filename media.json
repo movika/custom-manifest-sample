@@ -1,0 +1,56 @@
+{
+
+  "videos": [
+    {
+      "id": "video-id-1",
+      "duration": 9237,
+      "shortlink": null,
+      "variants": [
+        {
+          "url": "one.mp4",
+          "type": "mp4",
+          "size": null,
+          "standard": "1080p",
+          "resolution": "1920x1080",
+          "bitrate": null,
+          "cover": null,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "video-id-2",
+      "duration": 12053,
+      "shortlink": null,
+      "variants": [
+        {
+          "url": "two.mp4",
+          "type": "mp4",
+          "size": null,
+          "standard": "4K",
+          "resolution": "3840x2160",
+          "bitrate": null,
+          "cover": null,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "video-id-3",
+      "duration": 20417,
+      "shortlink": null,
+      "variants": [
+        {
+          "url": "three.mp4",
+          "type": "mp4",
+          "size": null,
+          "standard": "1080p",
+          "resolution": "1920x1080",
+          "bitrate": null,
+          "cover": null,
+          "preview": null
+        }
+      ]
+    }
+  ]
+}
